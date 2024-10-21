@@ -1,2 +1,2 @@
 # multisig-broker
-Broker service supporting coordination between Iron Fish multisig accounts
+Broker server and client supporting coordination between Iron Fish multisig accounts
