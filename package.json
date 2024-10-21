@@ -12,17 +12,27 @@
   "dependencies": {
     "@ironfish/rust-nodejs": "^2.7.0",
     "@ironfish/sdk": "^2.8.1",
+    "eslint-plugin-simple-import-sort": "10.0.0",
     "uuid": "8.3.2",
     "yup": "0.29.3"
   },
   "devDependencies": {
     "@types/uuid": "^8.0.1",
     "@types/yup": "0.29.10",
+    "@typescript-eslint/eslint-plugin": "6.19.0",
+    "@typescript-eslint/parser": "6.19.0",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-deprecation": "2.0.0",
+    "eslint-plugin-header": "3.1.1",
+    "eslint-plugin-prettier": "3.4.0",
+    "prettier": "2.3.2",
     "rimraf": "^3.0.2",
     "typescript": "5.0.4"
   },
   "scripts": {
     "build": "tsc -b tsconfig.json",
-    "clean": "rimraf build"
+    "clean": "rimraf build",
+    "lint": "yarn build && eslint --ext .ts,.tsx,.js,.jsx src/"
   }
 }
