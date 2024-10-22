@@ -19,6 +19,6 @@
     "rootDir": "./",
     "tsBuildInfoFile": "./build/tsconfig.tsbuildinfo"
   },
-  "include": ["src", "package.json"],
+  "include": ["src", "package.json", "start.ts"],
   "exclude": ["build"]
 }
