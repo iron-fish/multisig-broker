@@ -1,14 +1,22 @@
 {
   "name": "@ironfish/multisig-broker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Broker server and client supporting coordination between Iron Fish multisig accounts",
   "repository": "https://github.com/iron-fish/multisig-broker.git",
   "author": "Iron Fish <contact@ironfish.network> (https://ironfish.network)",
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
   "license": "MPL-2.0",
   "homepage": "https://ironfish.network",
   "engines": {
     "node": ">=18"
   },
+  "files": [
+    "/build/**/*.js",
+    "/build/**/*.d.ts",
+    "/build/**/*.d.ts.map",
+    "/build/**/*.json"
+  ],
   "dependencies": {
     "@ironfish/rust-nodejs": "^2.7.0",
     "@ironfish/sdk": "^2.8.1",

@@ -25,6 +25,10 @@ jobs:
       - name: Install dependencies
         run: yarn --non-interactive --frozen-lockfile
 
+      - name: Build
+        run: yarn build 
+        working-directory: ./
+
       - name: Publish
         run: npm publish --access public
         working-directory: ./
