@@ -2,6 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
+export * from './adapters'
 export * from './clients'
-export { MultisigServer } from './server'
+export * from './errors'
+export * from './messages'
+export * from './server'
+export * from './serverClient'
 export * from './utils'
