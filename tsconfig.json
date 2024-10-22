@@ -20,5 +20,5 @@
     "tsBuildInfoFile": "./build/tsconfig.tsbuildinfo"
   },
   "include": ["src", "package.json", "start.ts"],
-  "exclude": ["build"]
+  "exclude": ["build", "node_modules"]
 }
