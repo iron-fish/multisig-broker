@@ -567,7 +567,7 @@ export class MultisigServer {
       return
     }
 
-    if (isDkgSession(session) && session.clientIds.size >= session.status.maxSigners) {
+    if (isDkgSession(session) && session.clientIds.size === session.status.maxSigners) {
       this.sendErrorMessage(
         client,
         message.id,
