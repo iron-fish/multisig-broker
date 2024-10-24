@@ -1,6 +1,6 @@
 {
   "name": "@ironfish/multisig-broker",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Broker server and client supporting coordination between Iron Fish multisig accounts",
   "repository": "https://github.com/iron-fish/multisig-broker.git",
   "author": "Iron Fish <contact@ironfish.network> (https://ironfish.network)",
