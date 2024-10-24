@@ -55,20 +55,4 @@ export class MultisigClientError extends Error {
   name = this.constructor.name
 }
 
-export class SessionDecryptionError extends MultisigClientError {
-  constructor(message: string) {
-    super(message)
-  }
-}
-
-export class InvalidSessionError extends MultisigClientError {
-  constructor(message: string) {
-    super(message)
-  }
-}
-
-export class IdentityNotAllowedError extends MultisigClientError {
-  constructor(message: string) {
-    super(message)
-  }
-}
+export class SessionDecryptionError extends MultisigClientError {}
