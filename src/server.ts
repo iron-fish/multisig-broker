@@ -567,6 +567,16 @@ export class MultisigServer {
       return
     }
 
+    if (isDkgSession(session) && session.clientIds.size === session.status.maxSigners) {
+      this.sendErrorMessage(
+        client,
+        message.id,
+        'DKG session is full',
+        MultisigBrokerErrorCodes.DKG_SESSION_FULL,
+      )
+      return
+    }
+
     this.logger.debug(`Client ${client.id} joined session ${message.sessionId}`)
 
     this.addClientToSession(client, message.sessionId)
